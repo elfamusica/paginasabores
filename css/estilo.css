@@ -1,0 +1,242 @@
+.h1{
+    color:brown  ;
+    font-size: 50px;
+    font-family: "Tagesschrift", system-ui;
+
+}
+
+h2{
+    font-size: 40px;
+    color:black
+
+}
+h4{
+    font-family: "Tagesschrift", system-ui;
+    color: brown;
+    font-size: 20px;
+
+}
+html{
+    font-size: 16px;
+}
+
+header{
+    font-size: 20px;
+    font-family: "Tagesschrift", system-ui;
+    color: brown;
+    display: flex;
+    position: sticky;   
+    background-color: aquamarine;
+    box-shadow: 0px 10px 10px brown;
+    top:0;
+    z-index: 5;
+    justify-content:space-between; 
+
+
+}
+
+.logo{
+    width: 20%;
+    
+}
+
+.titulo{
+    font-family: "Tagesschrift", system-ui;;
+    font-size: large;
+}
+
+header:hover{
+    box-shadow: 0px 0px 10px black;
+    color: brown;
+
+}
+.contenedor{
+    justify-content: space-between;
+    display:flex;
+    height: 350px;
+    align-items: center;
+
+    }
+
+
+
+
+.col{
+    display: flex;
+    width: 30%;
+    height: 300px;
+}
+
+
+.imlogo{
+    margin: 25px;
+    padding: 50px;
+    border: 3px solid black;
+}
+
+
+
+nav{
+    font-family: "Tagesschrift", system-ui;
+    
+}
+.nav {
+    height: auto;
+    margin-right: 3%;
+}
+
+.anim{
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.anim:hover{
+    transition: scale(1.5);
+   
+}
+
+
+li{
+    padding: 10px;
+}
+.card{
+    width: 50%;
+}
+
+
+body{
+    
+   background-image: url(../imagenes/fondodesierto.jpg);
+  
+    
+}
+
+footer{
+    background-color:aquamarine;
+    bottom: 0;
+    
+  
+    
+
+}
+
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    text-decoration: none;
+    color: black;
+}
+
+
+.navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    text-decoration: none;
+ 
+
+}
+.contenedor{
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    width: 300px;
+    height:250px ;
+    background-color:chocolate;
+    border: 3px solid black;
+    
+
+}
+
+.grilla{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.item_grid1{
+    display: flexbox;
+    flex-direction: column;
+    grid-column:2/3 ;
+    grid-row: 1/2;
+}
+.item_grid2{
+    display: flexbox;
+    flex-direction: column;
+     grid-column: 4 / 5;
+    grid-row: 1/2;}
+
+.item_grid3{
+    display: flexbox;
+    flex-direction: column;
+     grid-column: 6 / 7;
+    grid-row: 1 / 2;
+
+}
+.item_grid4{
+    display: flexbox;
+    flex-direction: column;
+     grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+}
+.item_grid5{
+    display: flexbox;
+    flex-direction: column;
+     grid-column:  4/ 5;
+    grid-row: 3 / 4;
+
+}
+.enlaceinstagram{
+    list-style-type:none;
+    text-decoration: none;
+    color: black;
+
+}
+.enlacemail{
+    list-style-type:none;
+    text-decoration: none;
+    color: black;
+
+}
+
+@media(max-width:767px){
+    footer {font-size:10px;
+          background-color: red;
+          grid-template-columns: 1fr;
+
+    }
+}
+
+@media (min-width:768px) and (max-width:1279px){
+    
+    footer{
+        font-size: 16px;
+        background-color: blueviolet;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1280px) and (max-width:1599px){
+
+    footer{
+        font-size: 18px;
+        background-color: greenyellow;
+    }
+}
+
+@media(min-width:1600px){
+    
+    footer{
+        font-size: 20px;
+        background-color: aquamarine;
+        grid-template-columns: 1 fr 1 fr 1fr;
+    }
+}
+
+
